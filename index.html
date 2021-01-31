@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<!-- My CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- Font Poppins -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Frontend Mentor | Intro component with sign up form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<h1>Learn to code by watching others</h1>
+				<h4>
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</h4>
+			</div>
+			<div class="right">
+				<p class="label">
+					<span>Try it free 7 days</span> then $20/mo. thereafter
+				</p>
+				<div class="form">
+					<form action="">
+						<input class="firstName" type="text" placeholder="First Name" />
+						<p class="text-validation validate-firstName">
+							First Name cannot be empty
+						</p>
+						<input class="lastName" type="text" placeholder="Last Name" />
+						<p class="text-validation validate-lastName">
+							Last Name cannot be empty
+						</p>
+						<input class="email" type="email" placeholder="Email Address" />
+						<p class="text-validation validate-email email-empty">
+							Looks like this is not an email
+						</p>
+						<input class="password" type="password" placeholder="Password" />
+						<p class="text-validation validate-password">
+							Password cannot be empty
+						</p>
+						<button type="submit">Claim your free trial</button>
+					</form>
+					<p class="agreement">
+						By clicking the button, you are agreeing to our
+						<span class="tas">Terms and Services</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

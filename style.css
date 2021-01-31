@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    padding: 0 7rem;
+    align-items: center;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(images/bg-intro-desktop.png);
+    color: white;
+}
+.left,.right{
+    flex: 1;
+    padding: 2rem;
+}
+
+.left h1{
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.left h4{
+    font-weight: 400;
+}
+.right{
+    margin: auto;
+}
+
+.right .form{
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+}
+.right .text-validation{
+    text-align: right;
+    font-style: italic;
+}
+.right .label{
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 2rem;
+    margin-bottom:3rem ;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, .3) 0px 10px 5px;
+}
+
+.right .label span{
+    font-weight: 600;
+}
+
+
+.right .form form input{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 0.3rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.right .form form input.active{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.right .form form input:focus{
+    border:2px solid hsl(248, 32%, 49%) ;
+}
+
+
+.right button{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 1px 10px 3px hsl(154, 93%, 27%);
+}
+
+
+.right button:active{
+    box-shadow: 0 1px #666;
+    transform: translateY(5px);
+}
+
+.right .agreement{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1.3rem;
+    color: hsl(246, 25%, 77%);
+}
+
+.right .tas,.right .text-validation{
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: hsl(0, 100%, 74%);
+}
+
+.right .text-validation{
+    visibility: hidden;
+}
+
+.right .text-validation.validate-firstName.active{
+    visibility: visible;
+}
+
+.right .text-validation.validate-lastName.active{
+    visibility: visible;
+}
+
+.right .text-validation.email-empty.active{
+    visibility: visible;
+}
+
+.right .text-validation.validate-password.active{
+    visibility: visible;
+}
+
+@media only screen and (min-width:360px) and (max-width:991px){
+    .container{
+        display: block;
+        padding: 0;
+    }
+
+    .left{
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .left h1{
+        margin: 3rem 0 2rem 0;
+    }
+
+    .right .form{
+        padding: 1rem;
+    }
+}
